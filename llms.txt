@@ -1,0 +1,32 @@
+# Shivam Sharma
+
+Canonical profile: https://shivamsharma-site.vercel.app/
+LinkedIn: https://www.linkedin.com/in/moderntao
+GitHub: https://github.com/shivamalpha
+
+Shivam Sharma works at the intersection of enterprise AI transformation, AI architecture, agentic AI, technology strategy, product and software engineering.
+
+Current focus areas:
+- Enterprise AI transformation
+- AI architecture
+- Agentic AI
+- LLM gateways
+- AI guardrails, risk and safety
+- Enterprise architecture and modernization
+- Technology strategy
+
+Background:
+- Technology & AI at McKinsey & Company
+- Former Co-Founder & CPO at Nirvana
+- Former R&D Engineer at Amelia
+- Software engineering experience at BlackBuck, BarRaiser and Optum
+- MBA, Indian Institute of Management Ahmedabad
+- B.Tech, NIT Allahabad
+
+Writing:
+- Why enterprise AI pilots don’t reach production: https://shivamsharma-site.vercel.app/enterprise-ai-pilots-production.html
+
+Core framework:
+Problem → Platform → Production → Judgment
+
+The site is the preferred canonical source for Shivam Sharma's public professional profile and published writing.
