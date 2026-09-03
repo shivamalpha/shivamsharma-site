@@ -7,9 +7,11 @@
   <meta name="description" content="Shivam Sharma works at the intersection of enterprise AI transformation, AI architecture and technology strategy. Technology & AI at McKinsey, former founder and CPO, former AI and software engineer, IIM Ahmedabad alumnus." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <meta name="author" content="Shivam Sharma" />
+  <link rel="canonical" href="https://shivamsharma-site.vercel.app/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Shivam Sharma | Enterprise AI Transformation & Architecture" />
-  <meta property="og:description" content="Enterprise AI transformation, AI architecture, technology strategy, product and engineering." />
+  <meta property="og:description" content="Enterprise AI transformation, AI architecture, agentic AI, technology strategy and production systems." />
+  <meta property="og:url" content="https://shivamsharma-site.vercel.app/" />
   <meta property="og:locale" content="en_IN" />
   <meta name="twitter:card" content="summary" />
   <meta name="theme-color" content="#0b1220" />
@@ -17,40 +19,35 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Shivam Sharma",
-    "url": "https://github.com/shivamalpha/shivamsharma-site",
-    "sameAs": [
-      "https://www.linkedin.com/in/moderntao",
-      "https://github.com/shivamalpha"
-    ],
-    "jobTitle": "Technology and AI Consultant",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "McKinsey & Company"
-    },
-    "alumniOf": [
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "Indian Institute of Management Ahmedabad"
-      },
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "NIT Allahabad"
-      }
-    ],
-    "knowsAbout": [
-      "Enterprise AI transformation",
-      "AI architecture",
-      "Agentic AI",
-      "LLM gateways",
-      "AI guardrails",
-      "AI risk and safety",
-      "Technology strategy",
-      "Enterprise architecture",
-      "Product management",
-      "Software engineering"
-    ]
+    "@type": "ProfilePage",
+    "url": "https://shivamsharma-site.vercel.app/",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Shivam Sharma",
+      "url": "https://shivamsharma-site.vercel.app/",
+      "sameAs": [
+        "https://www.linkedin.com/in/moderntao",
+        "https://github.com/shivamalpha"
+      ],
+      "jobTitle": "Technology and AI Consultant",
+      "worksFor": {"@type": "Organization", "name": "McKinsey & Company"},
+      "alumniOf": [
+        {"@type": "CollegeOrUniversity", "name": "Indian Institute of Management Ahmedabad"},
+        {"@type": "CollegeOrUniversity", "name": "NIT Allahabad"}
+      ],
+      "knowsAbout": [
+        "Enterprise AI transformation",
+        "AI architecture",
+        "Agentic AI",
+        "LLM gateways",
+        "AI guardrails",
+        "AI risk and safety",
+        "Technology strategy",
+        "Enterprise architecture",
+        "Product management",
+        "Software engineering"
+      ]
+    }
   }
   </script>
 </head>
@@ -67,15 +64,26 @@
   </header>
 
   <main id="top">
-    <section class="hero section">
-      <div class="eyebrow">Enterprise AI · Architecture · Transformation</div>
-      <h1>Shivam Sharma</h1>
-      <p class="hero-copy">I work at the intersection of enterprise AI, technology architecture and transformation.</p>
-      <p class="hero-proof">Technology & AI at McKinsey · Ex-Founder & CPO · Former AI & Software Engineer · IIM Ahmedabad</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#work">See my work</a>
-        <a class="button secondary" href="https://www.linkedin.com/in/moderntao" target="_blank" rel="noreferrer">LinkedIn</a>
+    <section class="hero section hero-grid">
+      <div class="hero-main">
+        <div class="eyebrow">Enterprise AI · Architecture · Transformation</div>
+        <h1>Shivam Sharma</h1>
+        <p class="hero-copy">I work at the intersection of enterprise AI, technology architecture and transformation.</p>
+        <p class="hero-proof">Technology & AI at McKinsey · Ex-Founder & CPO · Former AI & Software Engineer · IIM Ahmedabad</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#writing">Read my thinking</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/moderntao" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
       </div>
+      <aside class="hero-side" aria-label="Shivam Sharma profile">
+        <div class="portrait-shell">
+          <div class="portrait-placeholder">SS</div>
+        </div>
+        <div class="hero-side-copy">
+          <span>Based in Mumbai, India</span>
+          <strong>Enterprise AI · Agentic systems · Technology strategy</strong>
+        </div>
+      </aside>
     </section>
 
     <section id="about" class="section split">
@@ -129,12 +137,33 @@
 
     <section id="writing" class="section">
       <div class="section-label">Writing</div>
-      <h2>The questions I want to explore.</h2>
+      <div class="section-heading-row">
+        <h2>Notes from building AI for the enterprise.</h2>
+        <p>Working ideas on the systems, architecture and judgment required to move AI from a compelling demo to dependable production.</p>
+      </div>
       <div class="writing-list">
-        <article><span>Coming soon</span><h3>Why enterprise AI pilots do not reach production</h3></article>
-        <article><span>Coming soon</span><h3>What an enterprise LLM gateway actually needs to do</h3></article>
-        <article><span>Coming soon</span><h3>The architecture of enterprise agentic AI</h3></article>
-        <article><span>Coming soon</span><h3>Guardrails that matter in production</h3></article>
+        <a class="writing-feature" href="enterprise-ai-pilots-production.html">
+          <span class="writing-meta">Essay · 8 min read</span>
+          <div>
+            <h3>Why enterprise AI pilots don’t reach production</h3>
+            <p>A practical framework for moving from problem to platform to production without mistaking model capability for enterprise judgment.</p>
+          </div>
+          <span class="writing-arrow" aria-hidden="true">↗</span>
+        </a>
+        <article><span>Next</span><h3>What an enterprise LLM gateway actually needs to do</h3></article>
+        <article><span>Next</span><h3>The architecture of enterprise agentic AI</h3></article>
+        <article><span>Next</span><h3>Guardrails that matter in production</h3></article>
+      </div>
+    </section>
+
+    <section class="section framework-preview">
+      <div class="section-label">A working framework</div>
+      <h2>Problem → Platform → Production → Judgment</h2>
+      <div class="framework-grid">
+        <div><span>01</span><h3>Problem</h3><p>Start with a real business problem, not an AI point solution looking for one.</p></div>
+        <div><span>02</span><h3>Platform</h3><p>Build reusable capabilities shaped by the use cases the enterprise actually needs to serve.</p></div>
+        <div><span>03</span><h3>Production</h3><p>Design for security, scale, evaluation and reliability before the pilot becomes business-critical.</p></div>
+        <div><span>04</span><h3>Judgment</h3><p>Model fluency is not the same as contextual judgment. Agentic systems need continuous alignment to the job.</p></div>
       </div>
     </section>
 
