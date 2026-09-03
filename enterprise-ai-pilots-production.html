@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Why Enterprise AI Pilots Don’t Reach Production | Shivam Sharma</title>
+  <meta name="description" content="Shivam Sharma on why enterprise AI pilots stall, and a practical Problem → Platform → Production → Judgment framework for building AI systems that survive production." />
+  <meta name="robots" content="index,follow,max-snippet:-1" />
+  <meta name="author" content="Shivam Sharma" />
+  <link rel="canonical" href="https://shivamsharma-site.vercel.app/enterprise-ai-pilots-production.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Why Enterprise AI Pilots Don’t Reach Production" />
+  <meta property="og:description" content="The problem is rarely whether the model can produce a clever answer. It is whether the whole system can solve a business problem safely, reliably and repeatedly." />
+  <meta property="og:url" content="https://shivamsharma-site.vercel.app/enterprise-ai-pilots-production.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Why Enterprise AI Pilots Don’t Reach Production",
+    "author": {"@type": "Person", "name": "Shivam Sharma", "url": "https://shivamsharma-site.vercel.app/"},
+    "datePublished": "2026-09-03",
+    "dateModified": "2026-09-03",
+    "mainEntityOfPage": "https://shivamsharma-site.vercel.app/enterprise-ai-pilots-production.html",
+    "keywords": ["enterprise AI", "AI transformation", "AI architecture", "agentic AI", "AI production", "LLM infrastructure"]
+  }
+  </script>
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Shivam Sharma home">SS</a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#focus">Focus</a>
+      <a href="index.html#writing">Writing</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section article-hero">
+      <div class="eyebrow">Enterprise AI · Production systems</div>
+      <h1>Why enterprise AI pilots don’t reach production</h1>
+      <p class="article-deck">The problem is rarely whether the model can produce a clever answer. It is whether the whole system can solve a real business problem safely, reliably and repeatedly.</p>
+      <div class="article-meta">Shivam Sharma · September 2026 · 8 min read</div>
+    </section>
+
+    <section class="section article-layout">
+      <aside class="article-aside">
+        <strong>The framework</strong>
+        <p>Problem → Platform → Production → Judgment</p>
+      </aside>
+
+      <article class="article-body">
+        <p class="lede">A surprising number of enterprise AI programs begin in one of two places: a point solution looking for a problem, or a collection of fragmented pilots that never become a system.</p>
+
+        <p>Both approaches can produce impressive demos. Neither is a reliable path to production.</p>
+
+        <p>The better starting point is to treat AI use cases as workloads that run on an evolving enterprise AI platform. That platform should not be generic for the sake of being generic. It should be shaped by the actual business problems the enterprise intends to solve.</p>
+
+        <p>That distinction matters. “Platform first” should not mean spending twelve months building infrastructure before a single use case is proven. It means identifying the first set of meaningful use cases, then deliberately extracting the capabilities that should be reusable across them.</p>
+
+        <div class="article-framework">
+          <div><span>01</span><h3>Problem</h3><p>Start with a real business problem, not AI looking for somewhere to be deployed.</p></div>
+          <div><span>02</span><h3>Platform</h3><p>Build reusable capabilities around the use cases the enterprise actually needs to serve.</p></div>
+          <div><span>03</span><h3>Production</h3><p>Engineer for security, scale, evaluation and reliability before the system becomes business-critical.</p></div>
+          <div><span>04</span><h3>Judgment</h3><p>Do not confuse a model’s ability to generate an answer with the contextual judgment required to perform a job.</p></div>
+        </div>
+
+        <h2>1. Stop building isolated AI point solutions</h2>
+
+        <p>A fragmented pilot model creates predictable duplication. Every team chooses its own model access pattern, its own orchestration logic, its own guardrails, its own evaluation approach and often its own security assumptions. The first pilot feels fast because it avoids platform decisions. The fifth pilot exposes the cost.</p>
+
+        <p>The alternative is a platform shaped from the lens of the use cases it needs to serve. If several use cases require secure model access, the model gateway becomes reusable. If they require enterprise data, retrieval and permissions become shared concerns. If agents act on systems of record, tool access, observability and approval controls become platform capabilities rather than application-specific afterthoughts.</p>
+
+        <p>The goal is not centralisation for its own sake. The goal is to avoid recreating the same hard production problems inside every pilot.</p>
+
+        <h2>2. A successful demo proves very little about production readiness</h2>
+
+        <p>Most demos answer a narrow question: can this model produce a useful result on a curated workflow?</p>
+
+        <p>Production asks a much harsher set of questions. Can the system handle the expected load? What happens when the model provider is slow? Can the CISO approve the data path? Can access be traced to a user? What happens when the answer is wrong? Can we detect degradation? Can we fall back safely?</p>
+
+        <h3>Security can stop a strong use case completely</h3>
+
+        <p>A pilot can have excellent business sponsorship and still die because the production data flow, model access pattern, permissions or agent autonomy cannot pass security review. Treating the CISO as a late-stage approver rather than an architecture stakeholder is one of the fastest ways to create a pilot that cannot ship.</p>
+
+        <h3>Infrastructure behaves differently at production scale</h3>
+
+        <p>This becomes especially visible in on-prem deployments. A stack that performs well for a small test population may struggle under concurrency, GPU contention, latency requirements and enterprise availability expectations. Production AI is not simply a bigger demo.</p>
+
+        <h3>Evaluation becomes an operating capability</h3>
+
+        <p>Enterprises often test whether the system can produce a good answer. Production requires knowing whether it continues producing acceptable answers across thousands of messy real-world variations, detecting when that quality changes and having a defined response when it does.</p>
+
+        <p>That requires evaluation datasets, traces, observability, business metrics and explicit failure handling. Reliability is not one benchmark score before launch. It is an operating discipline.</p>
+
+        <h2>3. Don’t optimise the model layer before you need to</h2>
+
+        <p>Fine-tuning enters enterprise conversations surprisingly early. Often too early.</p>
+
+        <p>Before deciding a model needs to be fine-tuned, there is usually significant ground to cover through better instructions, retrieval, context engineering, tool design and workflow redesign. The same applies to infrastructure. An organisation may assume everything must be hosted on-prem before determining whether a private cloud VPC or another isolated deployment pattern satisfies the actual requirement.</p>
+
+        <p>The principle is simple: expensive architectural assumptions should earn their way into the system.</p>
+
+        <p>There are absolutely cases where fine-tuning or on-prem infrastructure is justified. But they should follow a demonstrated requirement, not precede it.</p>
+
+        <h2>4. An agent is not a digital employee you hire</h2>
+
+        <div class="article-quote">An agent is not a digital employee you hire. It is a system you train into a job.</div>
+
+        <p>There is a tendency to imagine that once an agent can call tools and reason across steps, it will begin working like a capable human employee. That skips over the hardest part of enterprise work: the accumulated judgment embedded in the process.</p>
+
+        <p>Real jobs contain hundreds of small decisions that rarely appear in the official process map. If this happens, normally do that. Except for this type of customer. Escalate above this threshold. Be more conservative in this geography. Do not take that action when these two signals conflict.</p>
+
+        <p>The base LLM does not absorb those institutional details simply because it is capable. The agentic system has to be continuously aligned through instructions, context, workflow logic, tools, memory, evaluations, feedback and, where genuinely useful, model tuning.</p>
+
+        <p>This is also why linguistic sophistication should not be confused with intelligence or judgment. Ask a frontier model to generate startup ideas and it may produce ten beautifully explained concepts assembled from patterns that are currently popular. An experienced operator may reject most of them in seconds because the economics, distribution, defensibility or customer need simply do not make sense.</p>
+
+        <p>That distinction matters much more when the model is allowed to take actions rather than merely generate text.</p>
+
+        <h2>What changes when you build this way?</h2>
+
+        <p>The conversation shifts from “which pilot should we launch next?” to “which reusable capability does this use case require, and how does it strengthen the platform for the next ten?”</p>
+
+        <p>Security moves earlier. Evaluation becomes part of the architecture. Infrastructure decisions are tested against actual requirements. Agents are treated as systems that require continuous operational alignment rather than autonomous employees that arrive pre-trained for the organisation.</p>
+
+        <p>And, most importantly, business value stays in the centre of the architecture discussion.</p>
+
+        <div class="article-quote">An AI pilot becomes a production system when it safely, reliably and repeatedly solves a real business problem while drawing on a shared AI platform rather than becoming another isolated technology stack.</div>
+
+        <p class="article-end">This is the first note in a series on enterprise AI architecture, agentic systems and the infrastructure required to move AI from experimentation to production.</p>
+        <a class="back-link" href="index.html#writing">← Back to writing</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Shivam Sharma</span>
+    <span>Mumbai, India</span>
+  </footer>
+</body>
+</html>
