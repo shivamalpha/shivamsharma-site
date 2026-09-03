@@ -8,4 +8,8 @@ Shivam Sharma works at the intersection of enterprise AI, technology architectur
 
 ## Search discoverability
 
-The site uses semantic HTML, Person structured data, descriptive metadata and explicit crawler access for public search discovery. Content is intentionally written to make the relationship between Shivam Sharma and enterprise AI transformation, AI architecture, agentic AI, LLM gateways, AI guardrails, technology strategy and software engineering unambiguous.
+The site uses semantic HTML, Person and ProfilePage structured data, descriptive metadata, a sitemap and explicit crawler access for public search discovery. Content is intentionally written to make the relationship between Shivam Sharma and enterprise AI transformation, AI architecture, agentic AI, LLM gateways, AI guardrails, technology strategy and software engineering unambiguous.
+
+## Deployment
+
+Production is deployed through Vercel from the `main` branch.
